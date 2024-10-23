@@ -11,9 +11,71 @@
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5); */
 }
 
-.container form h2 {
+.appointment form .input-box2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 20rem;
+}
+
+.searchPatient input {
+  margin-left: 25rem;
+  margin-top: 1rem;
+}
+
+h1 {
   font-weight: bolder;
   text-align: center;
+}
+
+.container form h2,
+.appointment h2,
+.searchPatient h2,
+.appointment h3 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+form .input-box2 {
+  margin-bottom: 15px;
+  margin: 10px 0 9px 0;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box2 .details2 {
+  font-weight: 600;
+  margin-bottom: 1px;
+  color: rgb(7, 216, 146);
+}
+
+form .input-box2 input {
+  text-align: center;
+  height: 45px;
+  width: 90%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(7, 216, 146);
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.searchPatient input {
+  text-align: center;
+  height: 45px;
+  width: 40%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(7, 216, 146);
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+form .input-box2 input:focus,
+form .input-box2 input:valid {
+  border-color: aquamarine;
 }
 
 .container form .user-details {
@@ -78,7 +140,8 @@
   border-color: aquamarine;
 }
 
-form .button {
+form .button,
+.searchPatient .button {
   height: 45px;
   margin: 15px 0;
 }
@@ -106,18 +169,65 @@ button:hover {
   text-align: center;
 }
 
-.all-patients ul {
+.all-patients ul,
+.appointment ul,
+.searchPatient ul {
   list-style-type: none;
   text-align: center;
 }
 
-.all-patients ul li {
+.all-patients ul li,
+.appointment ul li,
+.searchPatient ul li {
   font-size: 1.4rem;
 }
 
 .all-patients p {
   font-size: 1.4rem;
   text-align: center;
+}
+
+.medical-records {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.medical-records section {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.medical-records h2 {
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.medical-records p,
+.medical-records ul li {
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+.medical-records strong {
+  color: #555;
+}
+
+.tab-buttons {
+  display: flex;
+}
+
+.tab-buttons button {
+  justify-content: space-between;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.tab-buttons button:hover {
+  color: #000000;
 }
 
 @media (mix-width: 584px) {
